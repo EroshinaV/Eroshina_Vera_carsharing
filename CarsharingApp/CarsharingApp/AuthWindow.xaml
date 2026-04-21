@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:CarsharingApp"
         mc:Ignorable="d"
         Title="Авторизация" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#4682B4" Offset="0.0"/>
+            <GradientStop Color="#00CED1" Offset="1.0"/>
+        </LinearGradientBrush>
+    </Window.Background>
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -39,7 +45,8 @@
 
             <Button Content="Войти"
                Width="120" 
-               Height="30"     
+               Height="30"  
+               Background="#B0E0E6"
                FontWeight="Bold"
                HorizontalAlignment="Center"
                Cursor="Hand"   
