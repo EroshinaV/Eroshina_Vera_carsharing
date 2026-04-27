@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarsharingApp"
         mc:Ignorable="d"
-        Title="Список машин" Height="450" Width="800">
+        Title="Окно список машин" Height="450" Width="800">
 
     <Window.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
