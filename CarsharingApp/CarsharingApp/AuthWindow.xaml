@@ -31,14 +31,14 @@
             <TextBlock Text="Логин" FontWeight="Bold" FontSize="14"  />
 
             <TextBox 
-              x:Name="txtUsername" 
+              x:Name="Username" 
               Margin="0,5,0,10"  
               Height="35"  
               BorderThickness="1"/>
 
             <TextBlock Text="Пароль" FontWeight="Bold" FontSize="14"/>
 
-            <PasswordBox x:Name="txtPassword" 
+            <PasswordBox x:Name="Password" 
                  Margin="0,5,0,10"  
                  Height="35"  
               
