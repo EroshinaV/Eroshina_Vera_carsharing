@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace CarsharingApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PreperationPage.xaml
     /// </summary>
-    public partial class MainWindow : Page
+    public partial class PreperationPage : Page
     {
-        public MainWindow()
+        public PreperationPage()
         {
             InitializeComponent();
+        }
+
+        private void GuestsDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
