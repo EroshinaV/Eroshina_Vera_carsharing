@@ -8,45 +8,71 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AuthPage">
 
+    <Page.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#4682B4" Offset="0.0"/>
+            <GradientStop Color="#00CED1" Offset="1.0"/>
+        </LinearGradientBrush>
+    </Page.Background>
+
     <Grid Margin="20">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Авторизация"
+        <TextBlock Grid.Row="0" 
+                   Text="Авторизация"
                    FontSize="24"
                    FontWeight="Bold"
                    HorizontalAlignment="Center"
-                   Margin="0,10" FontFamily="Bahnschrift"/>
+                   Margin="0,10" 
+                   FontFamily="Bahnschrift"/>
 
-        <StackPanel Grid.Row="1" VerticalAlignment="Center" Width="400">
+        <StackPanel Grid.Row="1" 
+                    VerticalAlignment="Center" 
+                    Width="400"
+                    HorizontalAlignment="Center">
 
-            <TextBlock Text="Логин" FontWeight="Bold" FontSize="14"  />
+            <TextBlock Text="Логин" FontWeight="Bold" FontSize="14"/>
 
             <TextBox 
-              x:Name="Username" 
-              Margin="0,5,0,10"  
-              Height="35"  
-              BorderThickness="1"/>
+                x:Name="Username" 
+                Margin="0,5,0,10"  
+                Height="35"  
+                BorderThickness="1"/>
 
             <TextBlock Text="Пароль" FontWeight="Bold" FontSize="14"/>
 
-            <PasswordBox x:Name="Password" 
-                 Margin="0,5,0,10"  
-                 Height="35"  
-              
-                 BorderThickness="1"/>
+            <PasswordBox 
+                x:Name="Password" 
+                Margin="0,5,0,10"  
+                Height="35"  
+                BorderThickness="1"/>
 
             <Button Content="Войти"
-               Width="120" 
-               Height="30"  
-               Background="#B0E0E6"
-               FontWeight="Bold"
-               HorizontalAlignment="Center"
-               Cursor="Hand"   
-               Margin="0,10,0,0"/>
+                    Width="120" 
+                    Height="30"  
+                    Background="#B0E0E6"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Center"
+                    Cursor="Hand"   
+                    Margin="0,10,0,0" 
+                    Click="LoginButton_Click"/>
+
+      
 
         </StackPanel>
+
+        <UniformGrid x:Name="Puzzlegrid" 
+                     Grid.Row="2"
+                     Columns="2" 
+                     Rows="2"
+                     Width="400"
+                     Height="400"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Top"
+                     Margin="0,20,0,0"/>
     </Grid>
-    </Page>
+</Page>

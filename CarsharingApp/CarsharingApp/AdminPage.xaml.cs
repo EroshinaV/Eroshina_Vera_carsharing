@@ -16,19 +16,19 @@ using System.Windows.Shapes;
 namespace CarsharingApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AdminPage.xaml
     /// </summary>
-    public partial class MainWindow : Page
+    public partial class AdminPage : Page
     {
-        
-            public static Frame MainFrame { get; private set; }
-
-            public MainWindow()
-            {
-                InitializeComponent();
-                MainFrame = mainFrame;
-                MainFrame.Navigate(new AuthPage());
-            }
-        
+        public AdminPage()
+        {
+            InitializeComponent();
+        }
+        private void AddUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddUserWindow AddUserWindow = new AddUserWindow();
+            AddUserWindow.ShowDialog();
+        }
     }
+   
 }
