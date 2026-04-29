@@ -38,6 +38,7 @@
                   Grid.Row="2" 
                   AutoGenerateColumns="False" 
                   Height="200" SelectionChanged="GuestsDataGrid_SelectionChanged">
+                
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Услуги/материалы" Binding="{Binding material}" Width="Auto"/>
                     <DataGridTextColumn Header="цены" Binding="{Binding price}" Width="Auto"/>

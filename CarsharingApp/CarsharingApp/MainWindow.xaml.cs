@@ -20,9 +20,15 @@ namespace CarsharingApp
     /// </summary>
     public partial class MainWindow : Page
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        
+            public static Frame MainFrame { get; private set; }
+
+            public MainWindow()
+            {
+                InitializeComponent();
+                MainFrame = mainFrame;
+                MainFrame.Navigate(new ApiPage());
+            }
+        
     }
 }

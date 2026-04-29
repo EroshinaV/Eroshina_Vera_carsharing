@@ -9,6 +9,6 @@
       Title="MainWindow">
 
     <Grid>
-        
+        <Frame Name="mainFrame"/>
     </Grid>
 </Page>

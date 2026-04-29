@@ -15,14 +15,17 @@ using System.Windows.Shapes;
 
 namespace CarsharingApp
 {
-    /// <summary>
-    /// Interaction logic for Prices.xaml
-    /// </summary>
     public partial class Prices : Page
     {
         public Prices()
         {
             InitializeComponent();
+        }
+
+
+        private void GuestsDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

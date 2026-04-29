@@ -27,8 +27,7 @@
                     FontWeight="Bold"
                     Cursor="Hand"   
                     Margin="0,0,0,10" 
-                    BorderThickness="0" 
-                    Click="Button_Click"/>
+                    BorderThickness="0"/>
 
             <Button Content="Отправить данные для теста"
                     Width="200" 
@@ -36,8 +35,7 @@
                     Background="#B0E0E6"
                     FontWeight="Bold"
                     Cursor="Hand" 
-                    BorderThickness="0" 
-                    Click="Button_Click_1"/>
+                    BorderThickness="0"/>
 
         </StackPanel>
     </Grid>

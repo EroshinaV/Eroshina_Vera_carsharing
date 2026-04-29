@@ -64,8 +64,7 @@
                     Background="#B0E0E6"    
                     FontWeight="Bold"
                     Cursor="Hand"   
-                    BorderThickness="0" 
-                    Click="BookButton_Click"
+                    BorderThickness="0"
                     Margin="0,0,10,0"/>
 
                 <Button Content="Удалить бронирование"
@@ -74,8 +73,7 @@
                     Background="#B0E0E6"    
                     FontWeight="Bold"
                     Cursor="Hand"   
-                    BorderThickness="0" 
-                    Click="DeleteButton_Click"/>
+                    BorderThickness="0"/>
             </StackPanel>
         </Grid>
     </Grid>

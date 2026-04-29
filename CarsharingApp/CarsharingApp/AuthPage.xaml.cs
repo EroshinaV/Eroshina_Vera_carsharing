@@ -15,17 +15,14 @@ using System.Windows.Shapes;
 
 namespace CarsharingApp
 {
-    public partial class SpecificationsPage : Page
+    /// <summary>
+    /// Interaction logic for AuthPage.xaml
+    /// </summary>
+    public partial class AuthPage : Page
     {
-        public SpecificationsPage()
+        public AuthPage()
         {
             InitializeComponent();
-        }
-
-
-        private void GuestsDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }
